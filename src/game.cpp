@@ -1,8 +1,9 @@
 #include "game.hpp"
+#include <iostream>
 
 game::game() 
-    : window(sf::VideoMode({800, 600}), "Paint"),
-    paint(10,20)
+    : window(sf::VideoMode({450, 450}), "Paint"),
+    paint(450, 450)
 {
     window.setFramerateLimit(30);
 }
@@ -26,16 +27,15 @@ void game::handleEvents() {
 
 void game::update() {
     dt = dtimer.restart().asSeconds();
-    std::cout << dt << std::endl;
 
     if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
-
+        paint.draw(window);
     }
 
 }
 
 void game::render() {
     window.clear(sf::Color::Black);
-
+    paint.render(window);
     window.display();
 }
