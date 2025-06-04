@@ -2,7 +2,7 @@
 
 game::game() 
     : window(sf::VideoMode({800, 600}), "Paint"),
-    paint()
+    paint(10,20)
 {
     window.setFramerateLimit(30);
 }

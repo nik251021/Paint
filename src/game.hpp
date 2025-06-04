@@ -8,14 +8,15 @@
 class game
 {
 private:
+    paint paint;
     void handleEvents();
     void update();
     void render();
+
     sf::Clock dtimer;
     float dt;
 
     sf::RenderWindow window;
-    paint paint;
 public:
     game();
     void run();
