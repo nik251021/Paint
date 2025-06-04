@@ -1,4 +1,5 @@
 in game.cpp, cycles and init
-in paint brush which do white colour
+in paint brush which do white colour and erase it on right button
 
-lastic didnt done yet
+left button of mouse - draw
+right button of mouse - erase

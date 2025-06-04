@@ -30,6 +30,8 @@ void game::update() {
 
     if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
         paint.draw(window);
+    } else if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Right)) {
+        paint.erase(window);
     }
 
 }
